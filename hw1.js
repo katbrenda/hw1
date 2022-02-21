@@ -134,6 +134,9 @@ console.log(swap(array));
 
 
 // 9. write a function that takes a array and a second argument and returns the index in the array of the second argument
+
+
+
 // 10. write a function that takes a number and uses a ternary to return if the number is odd or even.
 // 11. Write a function that prints all  numbers from 0 – 10
 
@@ -173,13 +176,34 @@ const characters = [
 
 //***MAP***
 console.log("\nMAP\n");
+
 //1. Get array of all names
 console.log("\narray of all names\n");
-letReturnName = characters.map;
+
+
+let names = characters.map(character => character.name);
+
+  console.log(names)
 
 //2. Get array of all heights
+
+let heights = characters.map(character => character.height);
+
+   console.log(heights);
+
 //3. Get array of objects with just name and height properties
+
+let nameHeight = characters.map(character => ({ name: character.name, height: character.height }))
+
+console.log(nameHeight);
+
 //4. Get array of all first names
+
+let firstNames = characters.map(x => x.name.split(" ")[0])
+
+ console.log(firstNames);
+
+
 
 //***REDUCE***
 //1. Get total mass of all characters
